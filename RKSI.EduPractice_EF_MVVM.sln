@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RKSI.EduPractice_EF_MVVM", "RKSI.EduPractice_EF_MVVM.csproj", "{87E9EA3A-3778-4599-A16A-422F7395EEDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E9EA3A-3778-4599-A16A-422F7395EEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E9EA3A-3778-4599-A16A-422F7395EEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E9EA3A-3778-4599-A16A-422F7395EEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E9EA3A-3778-4599-A16A-422F7395EEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AA1C80E-E349-49EB-8864-2D65D77C5647}
+	EndGlobalSection
+EndGlobal

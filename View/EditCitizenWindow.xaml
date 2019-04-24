@@ -1,0 +1,26 @@
+﻿<Window x:Class="RKSI.EduPractice_EF_MVVM.View.EditCitizenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RKSI.EduPractice_EF_MVVM.View"
+        xmlns:local1="clr-namespace:RKSI.EduPractice_EF_MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="EditCitizenWindow" Height="244.179" Width="270.582">
+    <Window.DataContext>
+        <local1:EditCitizenVM/>
+    </Window.DataContext>
+    <Grid>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Width="244"
+                Command="{Binding EditCitizen}" Click="Button_Click"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.469,0.448"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"
+                 Text="{Binding Name}" x:Name="NameField"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.469,0.448"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"
+                 Text="{Binding Surname}"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.469,0.448"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"
+                 Text="{Binding Patronym}"/>
+    </Grid>
+</Window>

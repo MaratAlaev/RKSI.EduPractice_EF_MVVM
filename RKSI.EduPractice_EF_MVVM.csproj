@@ -79,22 +79,42 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ComboCitizen.cs" />
     <Compile Include="DbContext\Citizen.cs" />
     <Compile Include="DbContext\CitizenDbContext.cs" />
     <Compile Include="DbContext\Document.cs" />
     <Compile Include="DbContext\Person.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\AddCitizenModel.cs" />
+    <Compile Include="Model\AddDocumentModel.cs" />
+    <Compile Include="Model\AddPersonModel.cs" />
     <Compile Include="Model\EditCitizenModel.cs" />
     <Compile Include="Model\MainWindowModel.cs" />
     <Compile Include="ViewModel\AddCitizenVM.cs" />
+    <Compile Include="ViewModel\AddDocumentVM.cs" />
+    <Compile Include="ViewModel\AddPersonVM.cs" />
     <Compile Include="ViewModel\EditCitizenVM.cs" />
     <Compile Include="ViewModel\MainWindowVM.cs" />
     <Compile Include="View\AddCitizenWindow.xaml.cs">
       <DependentUpon>AddCitizenWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AddDocumentWindow.xaml.cs">
+      <DependentUpon>AddDocumentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddPersonWindow.xaml.cs">
+      <DependentUpon>AddPersonWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\EditCitizenWindow.xaml.cs">
       <DependentUpon>EditCitizenWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditDocumentWindow.xaml.cs">
+      <DependentUpon>EditDocumentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditPersonWindow.xaml.cs">
+      <DependentUpon>EditPersonWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FindByCypherWindow.xaml.cs">
+      <DependentUpon>FindByCypherWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -132,7 +152,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AddDocumentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddPersonWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\EditCitizenWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditDocumentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditPersonWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FindByCypherWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

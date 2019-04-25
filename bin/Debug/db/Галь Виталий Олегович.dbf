@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ComboCitizen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>6</Id>
+  <Name>Виталий</Name>
+  <Surname>Галь</Surname>
+  <Patronym>Олегович</Patronym>
+  <DocId>4</DocId>
+  <DocName>Бумажка</DocName>
+  <Serial>7631</Serial>
+  <WhereIssued>Бийск</WhereIssued>
+  <DateIssued>2003-09-19T00:00:00</DateIssued>
+  <PersId>6</PersId>
+  <Cypher>2754</Cypher>
+  <Inn>908531</Inn>
+  <Type>Гражданин</Type>
+  <Date>2009-11-09T00:00:00</Date>
+</ComboCitizen>

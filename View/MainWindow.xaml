@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:RKSI.EduPractice_EF_MVVM.View"
         xmlns:local1="clr-namespace:RKSI.EduPractice_EF_MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinWidth="650">
+        Title="MainWindow" Height="450" Width="800" MinWidth="650" MinHeight="300">
     <Window.DataContext>
         <local1:MainWindowVM/>
     </Window.DataContext>
     <Grid>
-        <TabControl>
+        <TabControl Margin="0, 30, 0, 0">
             <TabItem Header="Граждане" Height="30" Width="200">
                 <Grid Background="#FFE5E5E5">
                     <DataGrid Margin="0, 0, 0, 50" SelectedItem="{Binding SelectedCitizen}" ItemsSource="{Binding Citizens}" AutoGenerateColumns="False">
@@ -41,11 +41,17 @@
                             <DataGridTextColumn Header="ИНН" Binding="{Binding Inn}"/>
                             <DataGridTextColumn Header="Тип" Binding="{Binding Type}"/>
                             <DataGridTextColumn Header="Дата регистрации" Binding="{Binding Date}"/>
+                            <DataGridTextColumn Header="Владелец" Binding="{Binding Citizen}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Добавить" HorizontalAlignment="Left" Margin="10, 336, 0, 0" VerticalAlignment="Top" Width="100" Height="35"/>
-                    <Button Content="Изменить" HorizontalAlignment="Center" Margin="0, 336, 0, 0" VerticalAlignment="Top" Width="100" Height="35"/>
-                    <Button Content="Удалить" HorizontalAlignment="Right" Margin="10,336,10,0" VerticalAlignment="Top" Width="100" Height="35"/>
+                    <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding AddPerson}"/>
+                    <Button Content="Изменить" HorizontalAlignment="Center" Margin="10,10,200,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding EditPerson}"/>
+                    <Button Content="Обновить" HorizontalAlignment="Center" Margin="10,10,-200,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding RefreshCitizenTable}"/>
+                    <Button Content="Удалить" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding DeletePerson}"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Документы" Width="200">
@@ -57,14 +63,24 @@
                             <DataGridTextColumn Header="Номер" Binding="{Binding Serial}"/>
                             <DataGridTextColumn Header="Место выдачи" Binding="{Binding WhereIssued}"/>
                             <DataGridTextColumn Header="Дата выдачи" Binding="{Binding DateIssued}"/>
+                            <DataGridTextColumn Header="Владелец" Binding="{Binding Citizen}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Добавить" HorizontalAlignment="Left" Margin="10, 336, 0, 0" VerticalAlignment="Top" Width="100" Height="35"/>
-                    <Button Content="Изменить" HorizontalAlignment="Center" Margin="0, 336, 0, 0" VerticalAlignment="Top" Width="100" Height="35"/>
-                    <Button Content="Удалить" HorizontalAlignment="Right" Margin="10,336,10,0" VerticalAlignment="Top" Width="100" Height="35"/>
+                    <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding AddDocument}"/>
+                    <Button Content="Изменить" HorizontalAlignment="Center" Margin="10,10,200,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding EditDocument}"/>
+                    <Button Content="Обновить" HorizontalAlignment="Center" Margin="10,10,-200,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding RefreshCitizenTable}"/>
+                    <Button Content="Удалить" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="100" Height="35"
+                            Command="{Binding DeleteDocument}"/>
                 </Grid>
             </TabItem>
         </TabControl>
+        <Button Content="Поиск по шифру" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="150"
+                Command="{Binding FindByCypher}"/>
+        <Button Content="Сохранить базу в JSON" HorizontalAlignment="Left" Margin="165,5,0,0" VerticalAlignment="Top" Width="150"
+                Command="{Binding SaveToJSON}"/>
 
     </Grid>
 </Window>

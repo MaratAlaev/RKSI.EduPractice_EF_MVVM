@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 A:\C#\RKSI.EduPractice_EF_MVVM\App.xaml
-3840372376
+81867325373
 
-18-982153897
+28-1745557549
 21-1662131148
-View\AddCitizenWindow.xaml;View\EditCitizenWindow.xaml;View\MainWindow.xaml;
+View\AddCitizenWindow.xaml;View\AddDocumentWindow.xaml;View\AddPersonWindow.xaml;View\EditCitizenWindow.xaml;View\EditDocumentWindow.xaml;View\EditPersonWindow.xaml;View\FindByCypherWindow.xaml;View\MainWindow.xaml;
 
 False
 

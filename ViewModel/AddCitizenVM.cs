@@ -14,7 +14,6 @@ namespace RKSI.EduPractice_EF_MVVM.ViewModel
     class AddCitizenVM : BindableBase
     {
         readonly AddCitizenModel _model = new AddCitizenModel();
-        public ReadOnlyObservableCollection<Document> DocumentList => _model.Documents;
 
         public string name { get; set; }
         public string surname { get; set; }

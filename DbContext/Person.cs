@@ -15,5 +15,10 @@ namespace RKSI.EduPractice_EF_MVVM
         public DateTime Date { get; set; }
         public int CitizenId { get; set; }
         public Citizen Citizen { get; set; }
+
+        public override string ToString()
+        {
+            return $"Шифр: {Cypher}, ИНН: {Inn}, Тип: {Type}, Дата рег.: {Date.ToShortDateString()}";
+        }
     }
 }

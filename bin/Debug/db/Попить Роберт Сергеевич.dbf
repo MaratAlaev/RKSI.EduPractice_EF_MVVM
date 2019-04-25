@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ComboCitizen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>2</Id>
+  <Name>Роберт</Name>
+  <Surname>Попить</Surname>
+  <Patronym>Сергеевич</Patronym>
+  <DocId>3</DocId>
+  <DocName>Вид на жительство</DocName>
+  <Serial>142871</Serial>
+  <WhereIssued>Мурманск</WhereIssued>
+  <DateIssued>2019-04-25T00:00:00</DateIssued>
+  <PersId>7</PersId>
+  <Cypher>2198</Cypher>
+  <Inn>205398</Inn>
+  <Type>Президент</Type>
+  <Date>2019-04-25T00:00:00</Date>
+</ComboCitizen>

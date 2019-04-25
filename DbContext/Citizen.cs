@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace RKSI.EduPractice_EF_MVVM
 {
+    [Serializable]
     public class Citizen
     {
         public int Id { get; set; }
@@ -14,5 +13,10 @@ namespace RKSI.EduPractice_EF_MVVM
         public string Patronym { get; set; }
         public List<Person> People { get; set; }
         public List<Document> Documents { get; set; }
+
+        public override string ToString()
+        {
+            return Surname + " " + Name + " " + Patronym;
+        }
     }
 }

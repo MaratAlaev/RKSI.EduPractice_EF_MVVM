@@ -1,5 +1,9 @@
 ﻿using Prism.Mvvm;
+using System;
 using System.Collections.ObjectModel;
+using System.IO;
+using System.Linq;
+using System.Xml.Serialization;
 
 namespace RKSI.EduPractice_EF_MVVM.Model
 {
@@ -36,6 +40,32 @@ namespace RKSI.EduPractice_EF_MVVM.Model
                     db.Citizens.Add(ctz);
                     db.SaveChanges();
                 }
+            }
+        }
+
+        public void SaveToJSON(ReadOnlyObservableCollection<Citizen> citizens,
+            ReadOnlyObservableCollection<Person> persons, ReadOnlyObservableCollection<Document> documents)
+        {
+            if (!Directory.Exists("db"))
+            {
+                Directory.CreateDirectory("db");
+            }
+            XmlSerializer ser = new XmlSerializer(typeof(ComboCitizen));
+
+            foreach (var ctz in Citizens)
+            {
+                try
+                {
+                    var person = (from i in persons where i.CitizenId == ctz.Id select i).First();
+                    var citizen = (from i in citizens where i.Id == ctz.Id select i).First();
+                    var document = (from i in documents where i.CitizenId == ctz.Id select i).First();
+                    ComboCitizen c = new ComboCitizen(citizen, person, document);
+                    using (FileStream fs = new FileStream("db/" + ctz + ".dbf", FileMode.Create))
+                    {
+                        ser.Serialize(fs, c);
+                    }
+                }
+                catch (Exception) { }
             }
         }
 

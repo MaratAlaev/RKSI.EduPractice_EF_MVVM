@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ComboCitizen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>1</Id>
+  <Name>Марат</Name>
+  <Surname>Алаев</Surname>
+  <Patronym>Фазилович</Patronym>
+  <DocId>1</DocId>
+  <DocName>Паспорт</DocName>
+  <Serial>214539</Serial>
+  <WhereIssued>Омск</WhereIssued>
+  <DateIssued>2003-10-27T00:00:00</DateIssued>
+  <PersId>8</PersId>
+  <Cypher>2398</Cypher>
+  <Inn>245398</Inn>
+  <Type>Депутат</Type>
+  <Date>2013-06-14T00:00:00</Date>
+</ComboCitizen>

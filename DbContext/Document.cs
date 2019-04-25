@@ -18,7 +18,7 @@ namespace RKSI.EduPractice_EF_MVVM
 
         public override string ToString()
         {
-            return Name + " " + Serial;
+            return $"{Name} {Serial}, выдан в {WhereIssued}, {DateIssued.ToShortDateString()}";
         }
     }
 }

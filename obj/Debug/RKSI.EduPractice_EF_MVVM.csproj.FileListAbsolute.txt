@@ -31,3 +31,13 @@ A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\RKSI.EduPractice_EF_MVVM.pdb
 A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\RKSI.EduPractice_EF_MVVM.csprojAssemblyReference.cache
 A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\EditCitizenWindow.g.cs
 A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\EditCitizenWindow.baml
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\AddPersonWindow.g.cs
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\AddPersonWindow.baml
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\EditPersonWindow.g.cs
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\EditPersonWindow.baml
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\AddDocumentWindow.g.cs
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\AddDocumentWindow.baml
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\EditDocumentWindow.g.cs
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\EditDocumentWindow.baml
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\FindByCypherWindow.g.cs
+A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\View\FindByCypherWindow.baml

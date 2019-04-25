@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ComboCitizen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>8</Id>
+  <Name>Андрей</Name>
+  <Surname>Трушкин</Surname>
+  <Patronym>Сергеевич</Patronym>
+  <DocId>5</DocId>
+  <DocName>Паспорт</DocName>
+  <Serial>352901</Serial>
+  <WhereIssued>Батайск</WhereIssued>
+  <DateIssued>2019-04-25T00:00:00</DateIssued>
+  <PersId>5</PersId>
+  <Cypher>8752</Cypher>
+  <Inn>335820</Inn>
+  <Type>Гражданин</Type>
+  <Date>2019-04-25T00:00:00</Date>
+</ComboCitizen>

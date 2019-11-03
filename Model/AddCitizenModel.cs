@@ -7,16 +7,27 @@ namespace RKSI.EduPractice_EF_MVVM.Model
     {
         public void AddCitizen(string name, string surname, string patronym)
         {
-            Citizen ctz = new Citizen()
+            if (!(string.IsNullOrEmpty(name) && string.IsNullOrWhiteSpace(name))
+                &&
+                !(string.IsNullOrEmpty(surname) && string.IsNullOrWhiteSpace(surname))
+                &&
+                !(string.IsNullOrEmpty(patronym) && string.IsNullOrWhiteSpace(patronym)))
             {
-                Name = name,
-                Surname = surname,
-                Patronym = patronym
-            };
-            using (var db = new CitizenDbContext())
+                Citizen ctz = new Citizen()
+                {
+                    Name = name,
+                    Surname = surname,
+                    Patronym = patronym
+                };
+                using (var db = new CitizenDbContext())
+                {
+                    db.Citizens.Add(ctz);
+                    db.SaveChanges();
+                }
+            }
+            else
             {
-                db.Citizens.Add(ctz);
-                db.SaveChanges();
+                throw new System.InvalidOperationException("Fields are empty");
             }
         }
     }

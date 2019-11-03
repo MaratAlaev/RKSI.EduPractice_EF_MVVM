@@ -25,7 +25,14 @@ namespace RKSI.EduPractice_EF_MVVM.ViewModel
             _model.PropertyChanged += (sender, args) => { RaisePropertyChanged(args.PropertyName); };
             AddPerson = new DelegateCommand(() =>
             {
-                _model.AddPerson(Cypher.Value, Inn.Value, Type, Date, SelectedCitizen);
+                try
+                {
+                    _model.AddPerson(Cypher.Value, Inn.Value, Type, Date, SelectedCitizen);
+                }
+                catch (InvalidOperationException)
+                {
+                    System.Windows.MessageBox.Show("Поля необходимо заполнить", "Ошибка");
+                }
             });
         }
     }

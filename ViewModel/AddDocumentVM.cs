@@ -24,7 +24,14 @@ namespace RKSI.EduPractice_EF_MVVM.ViewModel
             _model.PropertyChanged += (sender, args) => { RaisePropertyChanged(args.PropertyName); };
             AddDocument = new DelegateCommand(() =>
             {
-                _model.AddDocument(Name, Serial.Value, WhereIssued, DateIssued, SelectedCitizen);
+                try
+                {
+                    _model.AddDocument(Name, Serial.Value, WhereIssued, DateIssued, SelectedCitizen);
+                }
+                catch (InvalidOperationException)
+                {
+                    System.Windows.MessageBox.Show("Поля необходимо заполнить", "Ошибка");
+                }
             });
         }
     }

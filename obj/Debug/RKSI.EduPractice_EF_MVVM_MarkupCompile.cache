@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-A:\C#\RKSI.EduPractice_EF_MVVM\obj\Debug\
+A:\C#\RKSI.EduPractice_EF_MVVM\RKSI.EduPractice_EF_MVVM\obj\Debug\
 RKSI.EduPractice_EF_MVVM
 none
 false
 DEBUG;TRACE
-A:\C#\RKSI.EduPractice_EF_MVVM\App.xaml
+A:\C#\RKSI.EduPractice_EF_MVVM\RKSI.EduPractice_EF_MVVM\App.xaml
 81867325373
 
 28-1745557549
-21-1662131148
+2166089813
 View\AddCitizenWindow.xaml;View\AddDocumentWindow.xaml;View\AddPersonWindow.xaml;View\EditCitizenWindow.xaml;View\EditDocumentWindow.xaml;View\EditPersonWindow.xaml;View\FindByCypherWindow.xaml;View\MainWindow.xaml;
 
 False

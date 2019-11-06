@@ -60,7 +60,7 @@ namespace RKSI.EduPractice_EF_MVVM.Model
                     var citizen = (from i in citizens where i.Id == ctz.Id select i).First();
                     var document = (from i in documents where i.CitizenId == ctz.Id select i).First();
                     ComboCitizen c = new ComboCitizen(citizen, person, document);
-                    using (FileStream fs = new FileStream("db/" + ctz + ".dbf", FileMode.Create))
+                    using (FileStream fs = new FileStream("db/" + ctz + ".json", FileMode.Create))
                     {
                         ser.Serialize(fs, c);
                     }

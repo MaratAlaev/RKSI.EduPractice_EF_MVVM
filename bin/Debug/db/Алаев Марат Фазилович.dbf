@@ -5,13 +5,13 @@
   <Surname>Алаев</Surname>
   <Patronym>Фазилович</Patronym>
   <DocId>1</DocId>
-  <DocName>Паспорт</DocName>
-  <Serial>214539</Serial>
-  <WhereIssued>Омск</WhereIssued>
-  <DateIssued>2003-10-27T00:00:00</DateIssued>
-  <PersId>8</PersId>
-  <Cypher>2398</Cypher>
-  <Inn>245398</Inn>
-  <Type>Депутат</Type>
-  <Date>2013-06-14T00:00:00</Date>
+  <DocName>512512</DocName>
+  <Serial>512512</Serial>
+  <WhereIssued>Rostov</WhereIssued>
+  <DateIssued>2019-11-06T00:00:00</DateIssued>
+  <PersId>1</PersId>
+  <Cypher>228</Cypher>
+  <Inn>51253</Inn>
+  <Type>151515</Type>
+  <Date>2019-11-06T00:00:00</Date>
 </ComboCitizen>
